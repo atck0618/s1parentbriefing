@@ -189,7 +189,7 @@
   @media (max-width: 860px) { .qrrow { grid-template-columns: 1fr; } }
   .qrcard {
     background: var(--card); border: 1px solid var(--line); border-radius: 18px;
-    padding: 1.2rem 1.2rem; text-align: center;
+    padding: 1.2rem 1.2rem; text-align: center; color: var(--ink);
   }
   .qrcard img.qr { width: 150px; height: 150px; border-radius: 10px; }
   .qrcard img.storebadge { height: 42px; width: auto; display: block; margin: .8rem auto 0; }
@@ -247,6 +247,8 @@
   .pill { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: .9rem .7rem; text-align: center; font-weight: 650; font-size: .98rem; }
   .pill .ic { font-size: 1.35rem; display: block; margin-bottom: .35rem; }
   .pill small { display: block; font-weight: 500; color: var(--ink-soft); font-size: .8em; }
+  .pill p { font-weight: 400; font-size: .78rem; color: var(--ink-soft); margin-top: .45rem; line-height: 1.35; }
+  .pill p .en3 { display: block; }
   .dark .pill { background: var(--dark-2); border-color: transparent; }
   .dark .pill small { color: var(--dark-soft); }
 
@@ -621,56 +623,62 @@
 </section>
 
 <!-- 13 · AI PRINCIPLES -->
-<section class="slide" id="s13">
+<section class="slide dense" id="s13">
   <div class="wrap">
     <div class="kicker"><span class="num">13</span> 人工智能政策 · AI Policy · SA011_26-27 · 1/7 · 2026年9月1日生效 Effective 1 Sep 2026</div>
-    <h2 class="serif">AI 管治的七大倫理原則<span class="en">Seven ethical principles govern AI at Queen's College</span></h2>
-    <div class="pillrow" style="grid-template-columns:repeat(4,1fr);margin-top:2.4rem">
-      <div class="pill"><span class="ic">⚖️</span>問責<small>Accountability</small></div>
-      <div class="pill"><span class="ic">🧑‍✈️</span>人為監督<small>Human Oversight</small></div>
-      <div class="pill"><span class="ic">🔍</span>透明及可解釋<small>Transparency</small></div>
-      <div class="pill"><span class="ic">🔒</span>私隱<small>Privacy</small></div>
+    <h2 class="serif">AI 管治的七大倫理原則<span class="en">Seven ethical principles that govern AI at Queen's College</span></h2>
+    <div class="pillrow" style="grid-template-columns:repeat(4,1fr);margin-top:1.3rem">
+      <div class="pill"><span class="ic">⚖️</span>問責<small>Accountability</small><p>使用者為自己使用 AI 及其結果負責。<span class="en3">The user is responsible for their use of AI systems and their outcomes.</span></p></div>
+      <div class="pill"><span class="ic">🧑‍✈️</span>人為監督<small>Human Oversight</small><p>參與程度與風險成正比，高風險必留人為介入。<span class="en3">Human involvement scales with risk; high-risk uses always allow intervention.</span></p></div>
+      <div class="pill"><span class="ic">🔍</span>透明及可解釋<small>Transparency</small><p>公開 AI 使用情況，輔助決定應可被理解。<span class="en3">Open about AI use; AI-assisted decisions should be understandable.</span></p></div>
+      <div class="pill"><span class="ic">🔒</span>私隱<small>Privacy</small><p>個人資料保障至上，全面遵守《私隱條例》。<span class="en3">Data protection is paramount, in full compliance with the PDPO.</span></p></div>
     </div>
-    <div class="pillrow" style="grid-template-columns:repeat(3,1fr);margin-top:1rem">
-      <div class="pill"><span class="ic">🤝</span>公平<small>Fairness</small></div>
-      <div class="pill"><span class="ic">🌱</span>裨益<small>Beneficence</small></div>
-      <div class="pill"><span class="ic">🛡️</span>可靠、穩健及安全<small>Reliability &amp; Security</small></div>
-    </div>
-    <div class="cards" style="margin-top:1.4rem">
-      <div class="card">
-        <h3>批判思維先行 <span class="en">Critical thinking first</span></h3>
-        <p>學生須明白 AI 會<b>產生幻覺（hallucinate）</b>——核實事實是必須的。<span class="en2">Students are taught that AI can hallucinate; verifying facts is mandatory.</span></p>
-      </div>
+    <div class="pillrow" style="grid-template-columns:repeat(3,1fr);margin-top:.8rem">
+      <div class="pill"><span class="ic">🤝</span>公平<small>Fairness</small><p>使用 AI 須避免不公偏見及違法歧視。<span class="en3">AI must avoid unjust bias and unlawful discrimination.</span></p></div>
+      <div class="pill"><span class="ic">🌱</span>裨益<small>Beneficence</small><p>造福學生、教職員及社群，防止及減少傷害。<span class="en3">Benefits students, staff and community; harm is prevented and minimised.</span></p></div>
+      <div class="pill"><span class="ic">🛡️</span>可靠、穩健及安全<small>Reliability &amp; Security</small><p>運作可靠，防範錯誤及惡意攻擊。<span class="en3">Operates reliably and is secured against errors and attacks.</span></p></div>
     </div>
   </div>
 </section>
 
-<!-- 14 · AI RISK CONTROL & PROHIBITED -->
+<!-- 14 · GOLDEN RULES FOR STUDENTS -->
 <section class="slide dense" id="s13b">
   <div class="wrap">
     <div class="kicker"><span class="num">14</span> 人工智能政策 · AI Policy · SA011_26-27 · 2/7</div>
-    <h2 class="serif">風險越高，人的參與越多<span class="en">Risk-based control: the higher the risk, the more human involvement</span></h2>
-    
-    <div class="iconrows" style="margin-top:2rem">
-      <div class="iconrow" style="border-left:6px solid var(--red)">
-        <div class="ic" style="background:var(--red-soft)">🙋</div>
-        <div><h3>人在迴路 <span class="en">Human-in-the-Loop</span></h3><p>高風險任務——人全程參與每個決定。<span class="en2">High-risk tasks — a human takes part in every decision.</span></p></div>
+    <h2 class="serif">學生黃金守則<span class="en">Golden rules for students</span></h2>
+    <div class="cards grid3" style="margin-top:1.3rem">
+      <div class="card">
+        <div class="ic">✋</div>
+        <h3>預設禁止 <span class="en">Prohibited by default</span></h3>
+        <p>只有老師標示黃燈或綠燈才可使用 AI；沒有標示＝不可使用。<span class="en2">Use AI only when a task is marked Yellow or Green; no label means no AI.</span></p>
       </div>
-      <div class="iconrow" style="border-left:6px solid var(--yellow)">
-        <div class="ic" style="background:var(--yellow-soft)">🕹️</div>
-        <div><h3>人作主導 <span class="en">Human-in-Command</span></h3><p>中風險任務——人監督整體運作，可隨時介入。<span class="en2">Medium risk — humans oversee the system and can intervene at any time.</span></p></div>
+      <div class="card">
+        <div class="ic">✍️</div>
+        <h3>每次使用必須申報 <span class="en">Declare every use</span></h3>
+        <p>凡使用 AI 必附上「AI 使用聲明」，切勿當作自己作品。<span class="en2">Always append the AI Usage Disclosure Statement; never pass AI work off as your own.</span></p>
       </div>
-      <div class="iconrow" style="border-left:6px solid var(--green)">
-        <div class="ic" style="background:var(--green-soft)">🤖</div>
-        <div><h3>人不介入 <span class="en">Human-out-of-the-Loop</span></h3><p>低風險任務——可自動執行。<span class="en2">Low risk — may run automatically.</span></p></div>
+      <div class="card">
+        <div class="ic">🔒</div>
+        <h3>保護個人資料 <span class="en">Protect personal data</span></h3>
+        <p>切勿將個人或機密資料輸入公開 AI 工具。<span class="en2">Never put your own or others' personal or confidential data into public AI tools.</span></p>
+      </div>
+      <div class="card">
+        <div class="ic">🔍</div>
+        <h3>凡事核實 <span class="en">Verify everything</span></h3>
+        <p>AI 可能出錯或「幻覺」，使用前須以可靠來源核實。<span class="en2">AI can be inaccurate or hallucinate — always fact-check against reliable sources.</span></p>
+      </div>
+      <div class="card">
+        <div class="ic">🚫</div>
+        <h3>禁止深偽及傷害 <span class="en">No deepfakes, no harm</span></h3>
+        <p>切勿冒充他人、製作虛假影音、生成有害內容或欺凌。<span class="en2">Never impersonate, fake images/audio/video, create harmful content, or bully.</span></p>
+      </div>
+      <div class="card">
+        <div class="ic">📣</div>
+        <h3>及時舉報 <span class="en">Report problems</span></h3>
+        <p>發現不當輸出或懷疑資料外洩，立即向資訊科技統籌主任舉報。<span class="en2">Report biased, harmful output or a suspected data breach to the IT Coordinator at once.</span></p>
       </div>
     </div>
-    <div class="banrow" style="margin-top:1.8rem">
-      <div class="ban" style="background:var(--red-soft)"><span class="ic">🎭</span><b>深偽及冒充他人</b><small style="color:var(--ink-soft)">Deepfakes &amp; impersonation</small></div>
-      <div class="ban" style="background:var(--red-soft)"><span class="ic">🚫</span><b>生成歧視性內容</b><small style="color:var(--ink-soft)">Discriminatory content generation</small></div>
-      <div class="ban" style="background:var(--red-soft)"><span class="ic">🔓</span><b>個人資料輸入公開 AI</b><small style="color:var(--ink-soft)">Entering personal data into public AI</small></div>
-    </div>
-    <div style="text-align:center;margin-top:.55rem;color:var(--red);font-weight:650;font-size:.95rem">任何情況下嚴禁 · Prohibited in all cases</div>
+    <div class="note alert"><span class="nic">⛔</span><span><b>絕對規則：</b>所有考試、統一測驗及小測一律嚴禁使用 AI，絕無例外。<span class="en2">Absolute rule: AI is completely forbidden in all examinations, uniform tests and quizzes — no exceptions.</span></span></div>
   </div>
 </section>
 
@@ -863,12 +871,22 @@
   <div class="wrap">
     <div class="kicker"><span class="num">22</span> 謝謝 · Thank You</div>
     <h2 class="serif">查詢<span class="en">Enquiries?</span></h2>
-    <div class="contact">
-      <div><div class="l">姓名 · Who</div><div class="v">曾昭健老師<small>TSANG Chiu Kin</small></div></div>
-      <div><div class="l">職位 · Role</div><div class="v">資訊科技統籌主任<small>IT Coordinator</small></div></div>
-      <div><div class="l">地點 · Where</div><div class="v">教員室 B<small>Staff Room B</small></div></div>
+    <div class="split" style="grid-template-columns:1.2fr .8fr;align-items:center;margin-top:1.4rem">
+      <div>
+        <div class="contact" style="margin-top:0">
+          <div><div class="l">姓名 · Who</div><div class="v">曾昭健老師<small>TSANG Chiu Kin</small></div></div>
+          <div><div class="l">職位 · Role</div><div class="v">資訊科技統籌主任<small>IT Coordinator</small></div></div>
+          <div><div class="l">地點 · Where</div><div class="v">教員室 B<small>Staff Room B</small></div></div>
+        </div>
+        <p class="serif" style="margin-top:1.8rem;font-style:italic;color:var(--dark-soft);font-size:1.1rem">勤有功 — Labor Omnia Vincit</p>
+      </div>
+      <div class="qrcard">
+        <div class="plat">📖 重溫今日內容 <small>Review today's slides</small></div>
+        <img class="qr" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUgAAAFIAQAAAAAab1qeAAACfklEQVR4nO1bi2oEMQh05P7/l6f4SvYKhexBm8tVe2zTRLiNqDOaFJRF0VVFac0V0SWt/675EEGM3FEhhAjBHMVDbPWUHelWzce0ZBlW6DOVCJirp+xI92sCZkoI045hWzCMCV99h/c8TRMW37BoFwt4/O23f0y8P4klzEqcdB89bEe6356MsfmmealHPIaH8h3eUw/RFM+ZPvjhJ4Q8ZUe6VRMzoDEokyfS78v6C9+uH6cJy5EjrMOOORGTqLVTdqTvgUdMEErWFHZ1Vs9w01N2pFs1kR44A9zDHtPADLMesyPdrUmS5pRFlIzBOxQFu0fS+u3veQy+cxRGZtt4JrJzfBrfb/FPJq57fCeVn/lTOn+uCt35hqOmW47J0Gn/vJM/xUHdG3TBjgj/g9mtY/un3LAnLH9GD8kBPiwZqJQUn92vWxUm9jgSPdWYxUPpgNV4tCSIeojfiGj0RBKm0P15uVdvMn4nj4+EOqp3RIF0CgPU7XwJ0Z8r6m4GHc6aTZLmS4uCdM2M+5isM7mhg7bnLU+m9ZLNhAFN5qDRWsY4Wzom4nSrplRp6Tifo1rKB5vPyx3L0waXw7dMow5OngI8iZ7iIbpVE7PHOVp0o343BRbMn7Ij3aop3qurMOdTkF9bTWw+f69fxxpf8ueokNj2XBXW7Zrqg0byHI0lKZA6JeJ0q+bjel1pNuNNqkxClKKn7Ei3asolumejfpCk0R9h++fd+3WoYimPjoe3ov1TXsmfkmhfn6Ei7Z8vWZ6VQ+H95YJ3NP+UV+7XcZ65O6vPPh5xFCLou9yv46Vkr3PNTJ9sfF8VXujRJKAZ6lUcSeP7oqD/X+aDso1+nOYXLfGhrRcwZXAAAAAASUVORK5CYII=" alt="QR code to review today's slides">
+        <div class="scanlabel">📷 掃描重溫 Scan to review</div>
+        <div style="margin-top:.6rem;font-size:.85rem;font-weight:600;color:var(--accent-2)">有效期至 2026年7月31日 · Valid until 31 Jul 2026</div>
+      </div>
     </div>
-    <p class="serif" style="margin-top:2.6rem;font-style:italic;color:var(--dark-soft);font-size:1.1rem">勤有功 — Labor Omnia Vincit</p>
   </div>
 </section>
 
